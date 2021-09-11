@@ -1,0 +1,33 @@
+<%- include("../header", {title: title}); %>
+
+<main class="container">
+    <div class="banner">
+        <div class="login-text">
+            <h1>Log in to use equipment</h1>
+            <form method="post">
+                <fieldset style="width:250px">
+                    <legend>Login</legend>
+            
+                    <label for="name">Name</label><br>
+                    <input id="name" type="text" name="name"><br>
+            
+                    <label for="pw">Password</label><br>
+                    <input id="pw" type="text" name="pw"><br>
+            
+                    <div>
+                        <input type="submit" name="doit" value="Log in">
+                    </div>
+                </fieldset>
+            </form>
+            <p>
+                If you dont have an account. <br>
+                Click the sign up button in the top right corner.
+            </p>
+        </div>
+        <div class="index-picture">
+            <img src="/img/veris.png">
+        </div>
+    </div>
+</main>
+
+<%- include("../footer"); %>
